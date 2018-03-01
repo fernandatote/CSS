@@ -1,0 +1,215 @@
+body {
+  font-size: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main {
+  text-align: center;
+  margin: 2em auto;
+  width: 850px;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.box {
+  border: 1px solid gray;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+  padding-top: 0;
+}
+
+.box13 {
+  grid-column: 1/4;
+}
+ ul {
+  margin: 0;
+  padding: 0;
+}
+ ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+ ul li a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: block;
+  transition: all .5s ease;
+  padding-top: .8em;
+  padding-bottom: .5em;
+}
+ ul li a svg {
+  transition: all .5s ease;
+  display: block;
+}
+ ul li a span {
+  margin-top: .5em;
+  text-transform: capitalize;
+  display: block;
+  transition: all .5s ease;
+}
+
+/* for vertical li*/
+.box7, .box8, .box9 {
+  padding: 0;
+}
+
+.box7 .div-icons, .box8 .div-icons, .box9 .div-icons {
+  width: 100%;
+  background-color: black;
+}
+
+.box7 .div-icons ul li, .box8 .div-icons ul li, .box9 .div-icons ul li {
+  display: block;
+}
+
+.box7 ul li a, .box8 ul li a {
+  width: 100%;
+  text-align: left;
+}
+
+.box7 ul li a svg, .box8 ul li a svg {
+  padding-left: .5em;
+}
+
+.box7 ul li a span, .box8 ul li a span {
+  padding-left: .7em;
+}
+
+
+/* TRANSITIONS =============================== */
+
+/* TRANSITION BOX 1 */
+.box1 .div-icons ul li a:hover {
+  background-color: skyblue;
+}
+
+/* TRANSITION BOX 2 */
+.box2 ul li a:hover svg, .box2 ul li a:hover span {
+  color: greenyellow;
+}
+
+/* TRANSITION BOX 3 */
+.box3 ul li a:hover svg {
+  color: violet;
+}
+
+/* TRANSITION BOX 4 */
+.box4 ul li a:hover {
+  box-shadow: 2px 2px 3px black;
+}
+
+/* TRANSITION BOX 5 */
+.box5 ul li a {
+  height: 35px;
+  border-bottom: 5px solid black;
+}
+
+.box5 ul li a:hover {
+  border-bottom: 5px solid mediumspringgreen;
+}
+
+/* TRANSITION BOX 6 */
+.box6 ul li a {
+  height: 35px;
+  border-bottom: 5px solid black;
+}
+
+.box6 ul li:nth-of-type(1) a:hover {
+  border-bottom: 5px solid mediumspringgreen;
+}
+
+.box6 ul li:nth-of-type(2) a:hover {
+  border-bottom: 5px solid khaki;
+}
+
+.box6 ul li:nth-of-type(3) a:hover {
+  border-bottom: 5px solid skyblue;
+}
+
+.box6 ul li:nth-of-type(4) a:hover {
+  border-bottom: 5px solid greenyellow;
+}
+
+/* TRANSITION BOX 7 */
+.box7 ul li a:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+/* TRANSITION BOX 8 */
+.box8 ul li a {
+  width: 100%;
+  text-align: left;
+}
+
+.box8 ul li a svg, .box8 ul li a span {
+  transition: all 1.5s ease;
+}
+
+.box8 ul li a:hover {
+  background-color: yellow;
+}
+
+.box8 ul li a:hover svg, .box8 ul li a:hover span {
+  color: black;
+}
+
+/* TRANSITION BOX 9 */
+.box9 ul li a {
+  background-color: skyblue;
+}
+
+.box9 ul li a:hover {
+  width: 100%;
+  text-align: right;
+}
+
+.box9 ul li a:hover svg {
+  padding-right: .5em;
+}
+
+.box9 ul li a:hover span {
+  padding-right: .7em;
+}
+
+/* TRANSITION BOX 10 */
+.box10 ul li a:hover svg {
+  transform: rotate(360deg);
+}
+
+/* TRANSITION BOX 11 */
+.box11 ul li a:hover svg {
+  transform: rotateX(180deg);
+}
+
+/* TRANSITION BOX 12 */
+.box12 ul li a:hover svg {
+  transform: rotateY(180deg);
+}
+
+/* TRANSITION BOX 13 */
+.box13 input {
+  transition: width .5s ease;
+  width: 170px;
+}
+
+.box13 input:focus {
+  width: 400px;
+  font-size: 1.7em;
+}
+
+.box13 div {
+  margin-bottom: 2em;
+}
