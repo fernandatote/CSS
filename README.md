@@ -1,7 +1,7 @@
 # CSS Transitions
 
 ### What is it?
-An exercise to practice CSS transitions.
+A website to show examples of CSS transitions.
 
 ### Technical Architecture
 Developed using:
